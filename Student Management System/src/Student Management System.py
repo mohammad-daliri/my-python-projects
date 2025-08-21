@@ -1,19 +1,21 @@
 import json
 
 Data_File = "students.json"
-
+##This function loads data from the JSON file.
+## If the file exists, it returns the data as a dictionary.
+## If the file is missing, it returns an empty dictionary.
 def load_data():
     try:
         with open(Data_File, "r") as f:
             return json.load(f)
     except FileNotFoundError:
         return {}
-
+## This function saves the given data into the JSON file.
 def save_data(data):
     with open(Data_File, "w") as f:
         json.dump(data, f, indent=4)
 
-
+##This function is for adding stuedent.
 def add_student():
     data = load_data()
     student_id = int(input("Enter your student ID: "))
@@ -30,7 +32,7 @@ def add_student():
     
     
     
-    
+ ##   this function is for adding grades of the students.
 def add_grade():
     data = load_data
     student_id = int(input("student ID: "))
@@ -42,7 +44,7 @@ def add_grade():
     save_data(data)
     print("Grade added successfully.")
     
-    
+ ##This function is for calculating gpa of the students.
 def calculate_gpa():
     data = load_data
     student_id = int(input("student ID: "))
@@ -57,7 +59,7 @@ def calculate_gpa():
     gpa = sum(grades) / len(grades)
     print(f"GPA for {data[student_id]['name']}{data[student_id]['last_name']} = {gpa:.2f}")
     
-    
+##using this function for making a table of students.
 def show_students():
     data = load_data()
     if not data:
@@ -70,7 +72,8 @@ def show_students():
          print(f"{student_id:<4} | {info['name']:<11} | {info['last_name']:<10} | {info['major']:<11} | {info['age']:<3} | {info['grades']}")
          
          
-         
+##This function is the main loop of the Student Management System.
+## It displays a menu of options, takes user input, and calls the.     
 def main():
     while True:
         print("Student Management System")
@@ -100,4 +103,5 @@ if __name__ == "__main__":
            
 
         
+
     

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TF-IDF ATS Checker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 30px auto; }
+    textarea { width: 100%; min-height: 150px; }
+    input[type="file"] { width: 100%; }
+    .btn { padding: 8px 16px; margin-top: 10px; cursor: pointer; }
+    .flash { color: red; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h1>TF-IDF Resume ATS Checker</h1>
+  <p>Upload your resume (PDF) and paste a job description to get a similarity score.</p>
+
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <div class="flash">
+        {% for msg in messages %}
+          <div>{{ msg }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+
+  <form action="{{ url_for('analyze') }}" method="post" enctype="multipart/form-data">
+    <div>
+      <label for="resume">Resume (PDF):</label><br>
+      <input type="file" name="resume" id="resume" accept="application/pdf" required>
+    </div>
+
+    <div style="margin-top:15px;">
+      <label for="job_description">Job Description:</label><br>
+      <textarea name="job_description" id="job_description" placeholder="Paste the job description here..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn">Analyze</button>
+  </form>
+</body>
+</html>

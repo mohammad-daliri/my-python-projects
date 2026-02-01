@@ -1,0 +1,13 @@
+flask
+werkzeug
+pathlib
+numpy
+pandas
+scikit-learn
+fuzzywuzzy
+python-Levenshtein
+pymupdf
+pdf2image
+pytesseract
+nltk
+Pillow

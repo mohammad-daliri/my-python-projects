@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ATS Resume Checker (Dark Mode)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0d1117; /* Very dark background */
+      margin: 0;
+      padding: 30px;
+      color: #e6edf3;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: auto;
+      background: #161b22; /* lighter dark box */
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      text-align: center;
+      color: #58a6ff;
+      margin-bottom: 5px;
+    }
+
+    p.subtitle {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #9da5b4;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #30363d;
+      background: #0d1117;
+      color: #e6edf3;
+    }
+
+    textarea {
+      min-height: 150px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 14px;
+      width: 100%;
+      background: #238636;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #2ea043;
+    }
+
+    .flash {
+      background: #3c1e1e;
+      padding: 10px;
+      border-left: 5px solid #ff4d4d;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      color: #ffb3b3;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>ATS Resume Checker</h1>
+    <p class="subtitle">Upload your resume and compare it with a job description.</p>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="flash">
+          {% for msg in messages %}
+            <div>{{ msg }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    <form action="{{ url_for('analyze') }}" method="post" enctype="multipart/form-data">
+
+      <label for="resume">Upload Resume (PDF)</label>
+      <input type="file" id="resume" name="resume" accept="application/pdf" required>
+
+      <label for="job_description">Job Description</label>
+      <textarea id="job_description" name="job_description" placeholder="Paste job description here..." required></textarea>
+
+      <button type="submit" class="btn">Analyze Resume</button>
+
+    </form>
+
+  </div>
+
+</body>
+</html>

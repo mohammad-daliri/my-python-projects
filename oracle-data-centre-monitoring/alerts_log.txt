@@ -1,0 +1,25 @@
+2026-02-06 15:10:38.624148 | WARNING: Disk usage is above safe limit!
+2026-02-06 15:10:44.629802 | WARNING: Disk usage is above safe limit!
+2026-02-06 15:11:32.510053 | WARNING: Disk usage is above safe limit!
+2026-02-06 15:11:38.520500 | WARNING: Disk usage is above safe limit!
+2026-02-06 15:11:44.530619 | WARNING: Disk usage is above safe limit!
+2026-02-06 15:13:19.152923 | [OCI-UK-LONDON-DC01][RACK-07] WARNING: Disk usage high (89.6%) - notify capacity planning.
+2026-02-06 15:14:19.219097 | [OCI-UK-LONDON-DC01][RACK-07] WARNING: Disk usage high (89.6%) - notify capacity planning.
+2026-02-06 15:15:19.294551 | [OCI-UK-LONDON-DC01][RACK-07] WARNING: Disk usage high (89.6%) - notify capacity planning.
+2026-02-06 15:16:19.455424 | [OCI-UK-LONDON-DC01][RACK-07] WARNING: Disk usage high (89.6%) - notify capacity planning.
+2026-02-06 15:17:19.537707 | [OCI-UK-LONDON-DC01][RACK-07] WARNING: Disk usage high (89.6%) - notify capacity planning.
+2026-02-06 15:18:19.616539 | [OCI-UK-LONDON-DC01][RACK-07] WARNING: Disk usage high (89.6%) - notify capacity planning.
+2026-02-06 15:19:19.700973 | [OCI-UK-LONDON-DC01][RACK-07] WARNING: Disk usage high (89.6%) - notify capacity planning.
+2026-02-06 15:20:19.783628 | [OCI-UK-LONDON-DC01][RACK-07] WARNING: Disk usage high (89.6%) - notify capacity planning.
+2026-02-06 15:21:19.912810 | [OCI-UK-LONDON-DC01][RACK-07] WARNING: Disk usage high (89.6%) - notify capacity planning.
+2026-02-06 15:21:58.978696 | [OCI-UK-LONDON-DC01][RACK-07] WARNING: Disk usage high (89.6%) - notify capacity planning.
+2026-02-06 15:22:59.052562 | [OCI-UK-LONDON-DC01][RACK-07] WARNING: Disk usage high (89.6%) - notify capacity planning.
+2026-02-06 15:23:05.064133 | [OCI-UK-LONDON-DC01][RACK-07] 60s Summary -> CPU: 3.0% | MEM: 60.1% | DISK: 89.6% | STATUS: WARNING
+2026-02-06 15:23:59.133402 | [OCI-UK-LONDON-DC01][RACK-07] WARNING: Disk usage high (89.6%) - notify capacity planning.
+2026-02-06 15:24:17.160253 | [OCI-UK-LONDON-DC01][RACK-07] 60s Summary -> CPU: 3.9% | MEM: 59.2% | DISK: 89.6% | STATUS: WARNING
+2026-02-06 15:24:59.212985 | [OCI-UK-LONDON-DC01][RACK-07] WARNING: Disk usage high (89.6%) - notify capacity planning.
+2026-02-06 15:25:29.258116 | [OCI-UK-LONDON-DC01][RACK-07] 60s Summary -> CPU: 11.9% | MEM: 61.1% | DISK: 89.6% | STATUS: WARNING
+2026-02-06 15:25:55.548880 | [OCI-UK-LONDON-DC01][RACK-07] WARNING: Disk usage high (89.6%) - notify capacity planning.
+2026-02-06 15:26:55.630581 | [OCI-UK-LONDON-DC01][RACK-07] WARNING: Disk usage high (89.6%) - notify capacity planning.
+2026-02-06 15:27:01.642625 | [OCI-UK-LONDON-DC01][RACK-07] 60s Summary -> CPU: 8.9% | MEM: 59.2% | DISK: 89.6% | STATUS: WARNING
+2026-02-06 15:27:55.716741 | [OCI-UK-LONDON-DC01][RACK-07] WARNING: Disk usage high (89.6%) - notify capacity planning.
